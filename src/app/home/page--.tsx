@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Home() {
+const page = () => {
     return (
         <>
             <div className='hero-bg self-center py-20 relative flex flex-col items-center'>
@@ -120,3 +120,5 @@ export default function Home() {
         </>
     )
 }
+
+export default page
