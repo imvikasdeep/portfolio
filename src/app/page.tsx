@@ -14,7 +14,7 @@ export default function Home() {
                         </h1>
                         <div className='mt-10'>
                             <p className='text-lg'>
-                                Hello, I'm <span className='montserrat-700 bg-gradient-to-r from-pink-600 to-violet-400 inline-block text-transparent bg-clip-text'>VIKASDEEP CHAUDHARY</span>, a web developer dedicated to designing and developing beautiful, responsive, and user-centric websites.
+                                Hello, I&apos;m <span className='montserrat-700 bg-gradient-to-r from-pink-600 to-violet-400 inline-block text-transparent bg-clip-text'>VIKASDEEP CHAUDHARY</span>, a web developer dedicated to designing and developing beautiful, responsive, and user-centric websites.
                             </p>
                         </div>
                     </div>
@@ -45,10 +45,10 @@ export default function Home() {
             <div className='py-10'>
                 <div className='xl:max-w-8/10 px-5 mx-auto text-lg'>
                     <h2 className='text-pink-600 text-3xl mb-5'>About me</h2>
-                    <p className='mb-4'>Hi! I'm a passionate Frontend Developer who loves crafting beautiful and user-friendly websites. I enjoy turning ideas into interactive and visually appealing experiences on the web.
+                    <p className='mb-4'>Hi! I&apos;m a passionate Frontend Developer who loves crafting beautiful and user-friendly websites. I enjoy turning ideas into interactive and visually appealing experiences on the web.
                     </p>
-                    <p className='mb-4'>I'm skilled in Angular, JavaScript, and SCSS, and I’ve also explored Tailwind CSS and Next.js to expand my frontend toolkit. Whether it's building dynamic web apps or designing sleek UIs, I'm always excited to bring creativity and clean code together.</p>
-                    <p className='mb-4'>Let’s build something awesome!</p>
+                    <p className='mb-4'>I&apos;m skilled in Angular, JavaScript, and SCSS, and I&apos;ve also explored Tailwind CSS and Next.js to expand my frontend toolkit. Whether it's building dynamic web apps or designing sleek UIs, I&apos;m always excited to bring creativity and clean code together.</p>
+                    <p className='mb-4'>Let&apos;s build something awesome!</p>
                 </div>
             </div>
 
