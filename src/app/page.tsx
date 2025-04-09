@@ -67,10 +67,10 @@ export default function Home() {
                                 </div>
                                 <div className='shrink-0 flex gap-2'>
                                     <a href="https://github.com/imvikasdeep/moviebase-angular" target='_blank'>
-                                        <Image className='opacity-70 hover:opacity-100 duration-300' width={22} height={22} src="./assets/media/github-white.png" alt="github" />
+                                        <Image className='opacity-70 hover:opacity-100 duration-300' width={22} height={22} src="/assets/media/github-white.png" alt="github" />
                                     </a>
                                     <a href="https://moviebase-angular.netlify.app/" target='_blank'>
-                                        <Image className='opacity-70 hover:opacity-100 duration-300' width={22} height={22} src="./assets/media/globe-white.png" alt="globe" />
+                                        <Image className='opacity-70 hover:opacity-100 duration-300' width={22} height={22} src="/assets/media/globe-white.png" alt="globe" />
                                     </a>
                                 </div>
                             </div>
@@ -92,22 +92,22 @@ export default function Home() {
                     <ul className='flex gap-5 justify-center'>
                         <li>
                             <a href="https://github.com/imvikasdeep" target='_blank'>
-                                <Image width={25} height={25} src="./assets/media/github-white.png" alt="github" />
+                                <Image width={25} height={25} src="/assets/media/github-white.png" alt="github" />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/imvikasdeep/" target='_blank'>
-                                <Image width={25} height={25} src="./assets/media/linkedin-white.png" alt="github" />
+                                <Image width={25} height={25} src="/assets/media/linkedin-white.png" alt="linkedin" />
                             </a>
                         </li>
                         <li>
                             <a href="https://x.com/Im_vikasdeep" target='_blank'>
-                                <Image width={25} height={25} src="./assets/media/x-com-white.png" alt="github" />
+                                <Image width={25} height={25} src="/assets/media/x-com-white.png" alt="x-com" />
                             </a>
                         </li>
                         <li>
                             <a href="https://codepen.io/im_vikasdeep" target='_blank'>
-                                <Image width={25} height={25} src="./assets/media/codepen-white.png" alt="github" />
+                                <Image width={25} height={25} src="/assets/media/codepen-white.png" alt="codepen" />
                             </a>
                         </li>
                     </ul>
