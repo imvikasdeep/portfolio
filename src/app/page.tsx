@@ -44,21 +44,20 @@ export default function Home() {
                 </div>
             </div>
             <div className='py-10'>
-                <div className='xl:max-w-8/10 px-5 mx-auto text-lg'>
-                    <h2 className='text-pink-600 text-3xl mb-5'>About me</h2>
+                <div className='xl:max-w-8/10 px-5 mx-auto'>
+                    <h2 className='text-pink-500 text-3xl mb-5'>About me</h2>
                     <p className='mb-4'>Hi! I&apos;m a passionate Frontend Developer who loves crafting beautiful and user-friendly websites. I enjoy turning ideas into interactive and visually appealing experiences on the web.
-                    </p>
-                    <p className='mb-4'>I&apos;m skilled in Angular, JavaScript, and SCSS, and I&apos;ve also explored Tailwind CSS and Next.js to expand my frontend toolkit. Whether it&apos;s building dynamic web apps or designing sleek UIs, I&apos;m always excited to bring creativity and clean code together.</p>
+                    I&apos;m skilled in Angular, JavaScript, and SCSS, and I&apos;ve also explored Tailwind CSS and Next.js to expand my frontend toolkit. Whether it&apos;s building dynamic web apps or designing sleek UIs, I&apos;m always excited to bring creativity and clean code together.</p>
                     <p className='mb-4'>Let&apos;s build something awesome!</p>
                 </div>
             </div>
 
             <div className='py-10'>
                 <div className='xl:max-w-8/10 px-5 mx-auto'>
-                    <h2 className='text-pink-600 text-3xl mb-8'>Portfolio</h2>
+                    <h2 className='text-pink-500 text-3xl mb-8'>Portfolio</h2>
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                        <div className="group border-blue-500/20 border p-8 pb-6 rounded-2xl bg-blue-900/10 hover:bg-blue-800/10 hover:boder-blue-500/30 duration-300">
+                        <div className="group border-blue-500/20 border p-8 pb-6 rounded-md bg-blue-900/10 hover:bg-blue-800/10 hover:boder-blue-500/30 duration-300">
                             <div className="flex items-start justify-between">
                                 {/* <Image className='shrink-0' width={120} height={40} src="https://moviebase-angular.netlify.app/assets/images/logo.png" alt="logo" /> */}
                                 <div className='mr-4'>
@@ -74,7 +73,7 @@ export default function Home() {
                                     </a>
                                 </div>
                             </div>
-                            <div className='mt-5 leading-normal pt-5 border-t-2 border-blue-500/20'>
+                            <div className='mt-5 pt-5 border-t-2 border-blue-500/20'>
                                 <p>Developed a dynamic Movie Explorer web application using Angular and the TMDb (The Movie Database) API, designed to deliver real-time movie data to users in a clean, responsive UI. The app showcases trending movies, upcoming releases, top-rated films, and allows users to search and explore thousands of titles with detailed information.</p>
                             </div>
                             <div className="text-right mt-2 opacity-0 group-hover:opacity-100 duration-300">
