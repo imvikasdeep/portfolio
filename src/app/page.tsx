@@ -4,6 +4,7 @@ import Image from 'next/image';
 export default function Home() {
     return (
         <>
+
             <div className='hero-bg min-h-screen self-center relative flex flex-col justify-center'>
                 <div className='lg:max-w-[890px] xl:max-w-[1000px] w-full px-5 mx-auto'>
                     <div>
