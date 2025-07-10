@@ -26,20 +26,24 @@ export default function Home() {
                             <span className='ml-3'>Angular</span>
                         </div>
                         <div className='flex-grow-1 bg-blue-200/10  px-5 py-2 rounded-4xl flex items-center text-[var(--primary-accent)] hover:bg-blue-500/20 hover:boder-blue-500/30 duration-300'>
-                            <Image className='shrink-0' height={30} width={20} src="/assets/media/skills/favicon.ico" alt="Next.js" />
-                            <span className='ml-3'>Next.js</span>
+                            <Image className='shrink-0' height={30} width={20} src="/assets/media/skills/typescript-200.png" alt="typescript" />
+                            <span className='ml-3'>Typescript</span>
                         </div>
                         <div className='flex-grow-1 bg-blue-200/10  px-5 py-2 rounded-4xl flex items-center text-[var(--primary-accent)] hover:bg-blue-500/20 hover:boder-blue-500/30 duration-300'>
                             <Image className='shrink-0' height={30} width={20} src="/assets/media/skills/icons8-javascript-200.png" alt="JavaScript" />
                             <span className='ml-3'>JavaScript</span>
                         </div>
                         <div className='flex-grow-1 bg-blue-200/10  px-5 py-2 rounded-4xl flex items-center text-[var(--primary-accent)] hover:bg-blue-500/20 hover:boder-blue-500/30 duration-300'>
+                            <Image className='shrink-0' height={30} width={30} src="/assets/media/skills/icons8-sass-200.png" alt="SCSS" />
+                            <span className='ml-3'>SCSS</span>
+                        </div>
+                        <div className='flex-grow-1 bg-blue-200/10  px-5 py-2 rounded-4xl flex items-center text-[var(--primary-accent)] hover:bg-blue-500/20 hover:boder-blue-500/30 duration-300'>
                             <Image className='shrink-0' height={30} width={20} src="/assets/media/skills/icons8-tailwind-css-200.png" alt="Tailwind CSS" />
                             <span className='ml-3'>Tailwind CSS</span>
                         </div>
                         <div className='flex-grow-1 bg-blue-200/10  px-5 py-2 rounded-4xl flex items-center text-[var(--primary-accent)] hover:bg-blue-500/20 hover:boder-blue-500/30 duration-300'>
-                            <Image className='shrink-0' height={30} width={30} src="/assets/media/skills/icons8-sass-200.png" alt="SCSS" />
-                            <span className='ml-3'>SCSS</span>
+                            <Image className='shrink-0' height={30} width={20} src="/assets/media/skills/nodejs-200.png" alt="Node.js" />
+                            <span className='ml-3'>Node.js</span>
                         </div>
                     </div>
                 </div>
