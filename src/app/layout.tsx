@@ -14,9 +14,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Vikasdeep Chaudhary",
-    description: "Welcome to my developer portfolio built with Next.js and Tailwind CSS.",
+    title: "Vikasdeep Chaudhary — Frontend Developer",
+    description: "Portfolio of Vikasdeep Chaudhary, a frontend developer crafting beautiful, responsive, user-centric web experiences with Angular, React, and modern tooling.",
 };
+
+const themeInitScript = `
+(function() {
+  try {
+    var t = localStorage.getItem('theme');
+    if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark';
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+`;
 
 export default function RootLayout({
     children,
@@ -24,9 +36,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" data-theme='dark'>
+        <html lang="en" data-theme="dark" suppressHydrationWarning>
+            <head>
+                <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+            </head>
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-                <Header></Header>
+                <Header />
                 {children}
             </body>
         </html>
