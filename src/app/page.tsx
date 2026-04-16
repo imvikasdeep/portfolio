@@ -45,7 +45,7 @@ export default function Home() {
                             <span className='w-2 h-2 rounded-full bg-green-400 animate-pulse' />
                             <span className='text-sm text-[var(--foreground-muted)]'>Available for new projects</span>
                         </div>
-                        <h1 className='tracking-wider text-5xl md:text-7xl xl:text-8xl leading-tight font-bold'>
+                        <h1 className='tracking-wider text-5xl md:text-6xl xl:text-7xl leading-tight font-bold'>
                             <span className='gradient-text'>FRONTEND</span>
                             <span className='block mt-3 text-[var(--foreground)]'>
                                 <span className='text-[var(--primary-accent)]'>&#60;</span>DEVELOPER<span className='text-[var(--primary-accent)]'>&#47;&#62;</span>

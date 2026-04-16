@@ -5,7 +5,7 @@ import ThemeToggle from '../components/ThemeToggle'
 function Header() {
     return (
         <>
-            <header className='fixed top-0 z-20 px-4 py-4 w-full backdrop-blur-xl bg-[var(--background)]/70 border-b border-[var(--border)]'>
+            <header className='fixed top-0 z-20 px-4 py-2 w-full backdrop-blur-sm'>
                 <div className="xl:max-w-[1400px] w-full flex justify-between items-center mx-auto">
                     <Link href='/' className='mb-0 font-semi-bold text-xl tracking-wide' aria-label="Home">
                         <svg xmlns="http://www.w3.org/2000/svg" className='group' width="67" height="90" viewBox="0 0 67 65" fill="none">
