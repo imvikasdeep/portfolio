@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Vikasdeep Chaudhary — Frontend Developer",
+    title: "Vikasdeep Chaudhary - Frontend Developer",
     description: "Portfolio of Vikasdeep Chaudhary, a frontend developer crafting beautiful, responsive, user-centric web experiences with Angular, React, and modern tooling.",
 };
 
@@ -22,7 +22,7 @@ const themeInitScript = `
 (function() {
   try {
     var t = localStorage.getItem('theme');
-    if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark';
+    if (!t) t = 'dark';
     document.documentElement.setAttribute('data-theme', t);
   } catch (e) {
     document.documentElement.setAttribute('data-theme', 'dark');
