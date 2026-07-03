@@ -78,6 +78,12 @@ html {
     scroll-behavior: smooth;
 }
 
+#home,
+#work,
+#about {
+    scroll-margin-top: 120px;
+}
+
 body {
     min-height: 100vh;
     background: var(--background);

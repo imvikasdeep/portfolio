@@ -282,7 +282,7 @@ export default function CarWeekClient() {
                     </p>
                 </div>
                 <img className='mt-5'
-                    src="/assets/media/projects/carweek/carweek-ddp.png"
+                    src="/assets/media/projects/carweek/carweek-vdp.png"
                     alt="Vehicle Details View"
                     style={{ width: '100%', display: 'block', borderRadius: '12px' }}
                 />

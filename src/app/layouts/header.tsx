@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import ThemeToggle from '../components/ThemeToggle';
 
 function Header() {
@@ -14,9 +13,9 @@ function Header() {
                     </svg>
                 </Link>
                 <div className="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#work">Work</a>
-                    <a href="#about">About</a>
+                    <Link href="/#home">Home</Link>
+                    <Link href="/#work">Work</Link>
+                    <Link href="/#about">About</Link>
                 </div>
                 <ThemeToggle />
             </nav>

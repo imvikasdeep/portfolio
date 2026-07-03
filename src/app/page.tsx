@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react';
+import HashScroll from './components/HashScroll';
 
 const skills = [
     'Angular',
@@ -28,6 +29,7 @@ const caseStudies = [
         subtitle: 'Automotive Marketplace connecting buyers with dealership inventory',
         href: '/work/carweek',
         github: '',
+        img: '/assets/media/projects/carweek/carweek_homepage-long.png',
         theme: 'blue',
     },
     {
@@ -36,14 +38,7 @@ const caseStudies = [
         href: 'https://moviebase-angular.netlify.app/',
         github: 'https://github.com/imvikasdeep/moviebase-angular',
         theme: 'emerald',
-    },
-    {
-        title: 'Personal Portfolio',
-        subtitle: 'A focused portfolio system built with Next.js, Tailwind CSS, and refined interactions',
-        href: 'mailto:vikasdeep3098@gmail.com',
-        github: 'https://github.com/imvikasdeep',
-        theme: 'violet',
-    },
+    }
 ];
 
 const experience = [
@@ -108,6 +103,7 @@ function MiniBrowser({ theme }: { theme: 'emerald' | 'violet' | 'blue' }) {
 export default function Home() {
     return (
         <main className="portfolio-shell">
+            <HashScroll />
             <section id="home" className="hero-section">
                 <div className="hero-copy">
                     <p className="availability">Available for frontend roles and freelance work</p>
@@ -148,7 +144,7 @@ export default function Home() {
                                     rel={isInternal ? undefined : 'noreferrer'} 
                                     aria-label={`Open ${project.title}`}
                                 >
-                                    <MiniBrowser theme={project.theme as 'emerald' | 'violet' | 'blue'} />
+                                    <img  src={project.img} alt={project.title} className="rounded-lg" />
                                 </a>
                                 <div className="case-meta">
                                     <div>
@@ -176,7 +172,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="section-block experience-section">
+            <section id="about" className="section-block experience-section">
                 <h2>Experience</h2>
                 <div className="timeline">
                     {experience.map((item) => (
