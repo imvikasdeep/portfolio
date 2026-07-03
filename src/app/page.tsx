@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react';
+import HashScroll from './components/HashScroll';
 
 const skills = [
     'Angular',
@@ -11,41 +12,45 @@ const skills = [
     'Responsive UI',
 ];
 
-const featuredTiles = [
-    { title: 'Moviebase', type: 'Angular app', rotate: '-4deg', tone: 'green' },
-    { title: 'Design System', type: 'Components', rotate: '3deg', tone: 'blue' },
-    { title: 'Portfolio', type: 'Next.js', rotate: '-2deg', tone: 'violet' },
-    { title: 'Web UI', type: 'Frontend', rotate: '4deg', tone: 'amber' },
-    { title: 'Dashboard', type: 'Prototype', rotate: '-3deg', tone: 'slate' },
+const skillTiles = [
+    { title: 'Angular', type: 'Framework', rotate: '-4deg', tone: 'red', img: '/assets/media/skills/icons8-angularjs-200.png' },
+    { title: 'Next.js', type: 'Framework', rotate: '2deg', tone: 'slate', img: '/next.svg' },
+    { title: 'Node.js', type: 'Runtime', rotate: '-4deg', tone: 'green', img: '/assets/media/skills/nodejs-200.png' },
+    { title: 'TypeScript', type: 'Language', rotate: '3deg', tone: 'blue', img: '/assets/media/skills/typescript-200.png' },
+    { title: 'JavaScript', type: 'Language', rotate: '-2deg', tone: 'amber', img: '/assets/media/skills/icons8-javascript-200.png' },
+    { title: 'SCSS', type: 'Styling', rotate: '4deg', tone: 'pink', img: '/assets/media/skills/icons8-sass-200.png' },
+    { title: 'Tailwind CSS', type: 'Library', rotate: '-3deg', tone: 'blue', img: '/assets/media/skills/icons8-tailwind-css-200.png' },
+    { title: 'Responsive UI', type: 'Design', rotate: '3deg', tone: 'dark', img: '/assets/media/globe-white.png' },
 ];
 
 const caseStudies = [
+    {
+        title: 'CarWeek',
+        subtitle: 'Automotive Marketplace connecting buyers with dealership inventory',
+        href: '/work/carweek',
+        github: '',
+        img: '/assets/media/projects/carweek/carweek_homepage-long.png',
+        theme: 'blue',
+    },
     {
         title: 'Moviebase',
         subtitle: 'Movie discovery app with search, trending, upcoming, and top-rated flows',
         href: 'https://moviebase-angular.netlify.app/',
         github: 'https://github.com/imvikasdeep/moviebase-angular',
         theme: 'emerald',
-    },
-    {
-        title: 'Personal Portfolio',
-        subtitle: 'A focused portfolio system built with Next.js, Tailwind CSS, and refined interactions',
-        href: 'mailto:vikasdeep3098@gmail.com',
-        github: 'https://github.com/imvikasdeep',
-        theme: 'violet',
-    },
+    }
 ];
 
 const experience = [
     {
         period: '2021 - now ',
         role: 'Frontend Developer @ SLT PVT LTD',
-        detail: 'Building responsive, polished web interfaces with Angular, React, and modern styling systems',
+        detail: 'Developed modular UI, API-driven features, and reusable frontend patterns',
     },
     {
         period: '2019 - 2021',
         role: 'Web Designer @ SLT PVT LTD',
-        detail: 'Developed modular UI, API-driven features, and reusable frontend patterns',
+        detail: 'Building responsive, polished web interfaces with Angular, React, and modern styling systems',
     },
     {
         period: '2018',
@@ -54,7 +59,7 @@ const experience = [
     },
 ];
 
-function MiniBrowser({ theme }: { theme: 'emerald' | 'violet' }) {
+function MiniBrowser({ theme }: { theme: 'emerald' | 'violet' | 'blue' }) {
     return (
         <div className={`case-visual case-visual--${theme}`}>
             <div className="browser-frame">
@@ -98,6 +103,7 @@ function MiniBrowser({ theme }: { theme: 'emerald' | 'violet' }) {
 export default function Home() {
     return (
         <main className="portfolio-shell">
+            <HashScroll />
             <section id="home" className="hero-section">
                 <div className="hero-copy">
                     <p className="availability">Available for frontend roles and freelance work</p>
@@ -106,20 +112,17 @@ export default function Home() {
                     </h1>
                 </div>
 
-                <div className="tile-row" aria-label="Selected visual work">
-                    {featuredTiles.map((tile) => (
+                <div className="tile-row" aria-label="Skills">
+                    {skillTiles.map((tile) => (
                         <article
                             className={`work-tile work-tile--${tile.tone}`}
                             key={tile.title}
                             style={{ '--tile-rotate': tile.rotate } as CSSProperties}
                         >
-                            <div className="tile-screen" aria-hidden="true">
-                                <span />
-                                <span />
-                                <span />
-                                <span />
+                            <div className="skill-logo-container">
+                                <img src={tile.img} alt={tile.title} className="skill-logo-image" />
                             </div>
-                            <div>
+                            <div className="skill-text-container">
                                 <strong>{tile.title}</strong>
                                 <span>{tile.type}</span>
                             </div>
@@ -131,42 +134,45 @@ export default function Home() {
             <section id="work" className="section-block">
                 <h2>Case studies</h2>
                 <div className="case-list">
-                    {caseStudies.map((project) => (
-                        <article className="case-study" key={project.title}>
-                            <a href={project.href} target="_blank" rel="noreferrer" aria-label={`Open ${project.title}`}>
-                                <MiniBrowser theme={project.theme as 'emerald' | 'violet'} />
-                            </a>
-                            <div className="case-meta">
-                                <div>
-                                    <h3>{project.title}</h3>
-                                    <p>{project.subtitle}</p>
+                    {caseStudies.map((project) => {
+                        const isInternal = project.href.startsWith('/');
+                        return (
+                            <article className="case-study" key={project.title}>
+                                <a 
+                                    href={project.href} 
+                                    target={isInternal ? undefined : '_blank'} 
+                                    rel={isInternal ? undefined : 'noreferrer'} 
+                                    aria-label={`Open ${project.title}`}
+                                >
+                                    <img  src={project.img} alt={project.title} className="rounded-lg" />
+                                </a>
+                                <div className="case-meta">
+                                    <div>
+                                        <h3>{project.title}</h3>
+                                        <p>{project.subtitle}</p>
+                                    </div>
+                                    <div className="case-links">
+                                        <a 
+                                            href={project.href} 
+                                            target={isInternal ? undefined : '_blank'} 
+                                            rel={isInternal ? undefined : 'noreferrer'}
+                                        >
+                                            {isInternal ? 'Case Study' : 'Live'}
+                                        </a>
+                                        {project.github && (
+                                            <a href={project.github} target="_blank" rel="noreferrer">
+                                                Code
+                                            </a>
+                                        )}
+                                    </div>
                                 </div>
-                                <div className="case-links">
-                                    <a href={project.href} target="_blank" rel="noreferrer">Live</a>
-                                    <a href={project.github} target="_blank" rel="noreferrer">Code</a>
-                                </div>
-                            </div>
-                        </article>
-                    ))}
+                            </article>
+                        );
+                    })}
                 </div>
             </section>
 
-            <section id="about" className="section-block about-section">
-                <h2>About</h2>
-                <div className="about-grid">
-                    <p>
-                        I enjoy turning product ideas into sharp, responsive interfaces. My strongest day-to-day tools are Angular,
-                        TypeScript, JavaScript, SCSS, Tailwind CSS, and Next.js.
-                    </p>
-                    <div className="skill-cloud" aria-label="Skills">
-                        {skills.map((skill) => (
-                            <span key={skill}>{skill}</span>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="section-block experience-section">
+            <section id="about" className="section-block experience-section">
                 <h2>Experience</h2>
                 <div className="timeline">
                     {experience.map((item) => (
@@ -180,30 +186,6 @@ export default function Home() {
                     ))}
                 </div>
             </section>
-
-            <footer className="site-footer">
-                <span className="footer-credit">
-                    built with
-                    <svg aria-hidden="true" viewBox="0 0 24 24">
-                        <path d="M20.8 4.6c-1.9-1.8-4.9-1.7-6.7.2L12 7l-2.1-2.2C8.1 2.9 5.1 2.8 3.2 4.6 1.1 6.6 1 10 3 12.1l9 8.9 9-8.9c2-2.1 1.9-5.5-.2-7.5Z" />
-                    </svg>
-                    by vikasdeep
-                </span>
-                <nav aria-label="Social links">
-                    <a href="mailto:vikasdeep3098@gmail.com" aria-label="Email">
-                        Email
-                    </a>
-                    <a href="https://www.linkedin.com/in/imvikasdeep/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/imvikasdeep" target="_blank" rel="noreferrer" aria-label="GitHub">
-                        Github
-                    </a>
-                    <a href="https://codepen.io/im_vikasdeep" target="_blank" rel="noreferrer" aria-label="GitHub">
-                        Codepen
-                    </a>
-                </nav>
-            </footer>
         </main>
     );
 }
