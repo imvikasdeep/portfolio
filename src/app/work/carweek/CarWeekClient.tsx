@@ -63,7 +63,6 @@ export default function CarWeekClient() {
 
     return (
         <main className="case-study-page">
-            {/* Header / Back Navigation */}
             <div className="case-study-header">
                 <Link href="/" className="back-home-btn" style={{ marginBottom: '24px' }}>
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -76,7 +75,6 @@ export default function CarWeekClient() {
                 <p className="case-study-tagline">Automotive Marketplace connecting buyers with dealership inventory</p>
             </div>
 
-            {/* Impact Highlights Box */}
             <section className="impact-box">
                 <div className="impact-item">
                     <div className="impact-dot impact-dot--blue"></div>
@@ -115,7 +113,6 @@ export default function CarWeekClient() {
                 </div>
             </section>
 
-            {/* Section 1: Hero Image & Metadata */}
             <section className="study-section" style={{ padding: '0 0 56px' }}>
                 <img className='mt-5'
                     src="/assets/media/projects/carweek/carweek_homepage.png"
@@ -145,7 +142,6 @@ export default function CarWeekClient() {
                 </div>
             </section>
 
-            {/* Section 2: Overview */}
             <section className="study-section">
                 <h2>Overview</h2>
                 <div className="study-text">
@@ -158,7 +154,6 @@ export default function CarWeekClient() {
                 </div>
             </section>
 
-            {/* Section 3: The Problem */}
             <section className="study-section">
                 <h2>The Problem</h2>
                 <div className="study-text">
@@ -190,7 +185,6 @@ export default function CarWeekClient() {
                 </div>
             </section>
 
-            {/* Section 4: Solution with Interactive Hotspots */}
             <section className="study-section">
                 <h2>Solution &amp; Features</h2>
                 <div className="study-text">
@@ -206,7 +200,6 @@ export default function CarWeekClient() {
                 />
             </section>
 
-            {/* Section 5: My Contribution */}
             <section className="study-section">
                 <h2>My Contribution</h2>
                 <div className="study-text">
@@ -243,7 +236,6 @@ export default function CarWeekClient() {
                 </div>
             </section>
 
-            {/* Section 6: Homepage Development with Annotations */}
             <section className="study-section">
                 <h2>Homepage Development</h2>
                 <div className="study-text">
@@ -258,7 +250,6 @@ export default function CarWeekClient() {
                 />
             </section>
 
-            {/* Section 7: Inventory Listing Page */}
             <section className="study-section">
                 <h2>Inventory Listing Page</h2>
                 <div className="study-text">
@@ -273,7 +264,6 @@ export default function CarWeekClient() {
                 />
             </section>
 
-            {/* Section 8: Vehicle Detail Page */}
             <section className="study-section">
                 <h2>Vehicle Detail Page</h2>
                 <div className="study-text">
@@ -288,7 +278,6 @@ export default function CarWeekClient() {
                 />
             </section>
 
-            {/* Section 9: Dealer Profile */}
             <section className="study-section">
                 <h2>Dealer Profile</h2>
                 <div className="study-text">
@@ -303,7 +292,6 @@ export default function CarWeekClient() {
                 />
             </section>
 
-            {/* Section: Lead Capture & CRM */}
             <section className="study-section">
                 <h2>Lead Capture &amp; CRM Integration</h2>
                 <div className="study-text">
@@ -313,7 +301,6 @@ export default function CarWeekClient() {
                 </div>
             </section>
 
-            {/* Section: Responsive Design */}
             <section className="study-section">
                 <h2>Responsive Design</h2>
                 <div className="study-text">
@@ -372,7 +359,6 @@ export default function CarWeekClient() {
                 </div>
             </section>
 
-            {/* Section 16: Final Product Highlights */}
             <section className="study-section" style={{ borderBottom: 'none' }}>
                 <h2>Final Product Highlights</h2>
                 <div className="study-text">

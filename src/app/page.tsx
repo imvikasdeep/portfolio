@@ -31,15 +31,19 @@ const caseStudies = [
         github: '',
         img: '/assets/media/projects/carweek/carweek_homepage-long.png',
         theme: 'blue',
-    },
+    }
+];
+
+const projects = [
     {
         title: 'Moviebase',
         subtitle: 'Movie discovery app with search, trending, upcoming, and top-rated flows',
         href: 'https://moviebase-angular.netlify.app/',
         github: 'https://github.com/imvikasdeep/moviebase-angular',
+        img: '/assets/media/projects/moviebase-app.png',
         theme: 'emerald',
     }
-];
+]
 
 const experience = [
     {
@@ -138,13 +142,13 @@ export default function Home() {
                         const isInternal = project.href.startsWith('/');
                         return (
                             <article className="case-study" key={project.title}>
-                                <a 
-                                    href={project.href} 
-                                    target={isInternal ? undefined : '_blank'} 
-                                    rel={isInternal ? undefined : 'noreferrer'} 
+                                <a
+                                    href={project.href}
+                                    target={isInternal ? undefined : '_blank'}
+                                    rel={isInternal ? undefined : 'noreferrer'}
                                     aria-label={`Open ${project.title}`}
                                 >
-                                    <img  src={project.img} alt={project.title} className="rounded-lg" />
+                                    <img src={project.img} alt={project.title} className="rounded-lg" />
                                 </a>
                                 <div className="case-meta">
                                     <div>
@@ -152,9 +156,50 @@ export default function Home() {
                                         <p>{project.subtitle}</p>
                                     </div>
                                     <div className="case-links">
-                                        <a 
-                                            href={project.href} 
-                                            target={isInternal ? undefined : '_blank'} 
+                                        <a
+                                            href={project.href}
+                                            target={isInternal ? undefined : '_blank'}
+                                            rel={isInternal ? undefined : 'noreferrer'}
+                                        >
+                                            {isInternal ? 'Case Study' : 'Live'}
+                                        </a>
+                                        {project.github && (
+                                            <a href={project.github} target="_blank" rel="noreferrer">
+                                                Code
+                                            </a>
+                                        )}
+                                    </div>
+                                </div>
+                            </article>
+                        );
+                    })}
+                </div>
+            </section>
+
+            <section id="work" className="section-block">
+                <h2>Projects</h2>
+                <div className="case-list">
+                    {projects.map((project) => {
+                        const isInternal = project.href.startsWith('/');
+                        return (
+                            <article className="case-study" key={project.title}>
+                                <a
+                                    href={project.href}
+                                    target={isInternal ? undefined : '_blank'}
+                                    rel={isInternal ? undefined : 'noreferrer'}
+                                    aria-label={`Open ${project.title}`}
+                                >
+                                    <img src={project.img} alt={project.title} className="rounded-lg" />
+                                </a>
+                                <div className="case-meta">
+                                    <div>
+                                        <h3>{project.title}</h3>
+                                        <p>{project.subtitle}</p>
+                                    </div>
+                                    <div className="case-links">
+                                        <a
+                                            href={project.href}
+                                            target={isInternal ? undefined : '_blank'}
                                             rel={isInternal ? undefined : 'noreferrer'}
                                         >
                                             {isInternal ? 'Case Study' : 'Live'}
