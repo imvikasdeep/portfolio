@@ -135,7 +135,7 @@ button {
 .nav-links a {
     padding: 8px 15px;
     border-radius: 999px;
-    color: var(--surface);
+    color: var(--foreground-muted);
     font-size: 12px;
     font-weight: 600;
 }
