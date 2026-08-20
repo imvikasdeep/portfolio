@@ -1,25 +1,14 @@
 import type { CSSProperties } from 'react';
 import HashScroll from './components/HashScroll';
 
-const skills = [
-    'Angular',
-    'TypeScript',
-    'JavaScript',
-    'SCSS',
-    // 'Tailwind CSS',
-    'Next.js',
-    'Node.js',
-    'Responsive UI',
-];
-
 const skillTiles = [
     { title: 'Angular', type: 'Framework', rotate: '-4deg', tone: 'red', img: '/assets/media/skills/icons8-angularjs-200.png' },
+    { title: 'React.js', type: 'Framework', rotate: '5deg', tone: 'blue', img: '/assets/media/skills/react.svg' },
     { title: 'Next.js', type: 'Framework', rotate: '2deg', tone: 'slate', img: '/next.svg' },
     { title: 'Node.js', type: 'Runtime', rotate: '-4deg', tone: 'green', img: '/assets/media/skills/nodejs-200.png' },
     { title: 'TypeScript', type: 'Language', rotate: '3deg', tone: 'blue', img: '/assets/media/skills/typescript-200.png' },
     { title: 'JavaScript', type: 'Language', rotate: '-2deg', tone: 'amber', img: '/assets/media/skills/icons8-javascript-200.png' },
     { title: 'SCSS', type: 'Styling', rotate: '4deg', tone: 'pink', img: '/assets/media/skills/icons8-sass-200.png' },
-    { title: 'Tailwind CSS', type: 'Library', rotate: '-3deg', tone: 'blue', img: '/assets/media/skills/icons8-tailwind-css-200.png' },
     { title: 'Responsive UI', type: 'Design', rotate: '3deg', tone: 'dark', img: '/assets/media/globe-white.png' },
 ];
 
@@ -47,62 +36,21 @@ const projects = [
 
 const experience = [
     {
-        period: '2021 - now ',
+        period: '2024 - Now',
+        role: 'Senior Frontend Developer @ SLT PVT LTD',
+        detail: 'Built scalable SaaS platforms, reusable UI architecture, APIs, and AI-powered integrations',
+    },
+    {
+        period: '2022 - 2024',
         role: 'Frontend Developer @ SLT PVT LTD',
-        detail: 'Developed modular UI, API-driven features, and reusable frontend patterns',
+        detail: 'Developed enterprise Angular/React applications, reusable components, and API-driven features',
     },
     {
-        period: '2019 - 2021',
-        role: 'Web Designer @ SLT PVT LTD',
-        detail: 'Building responsive, polished web interfaces with Angular, React, and modern styling systems',
-    },
-    {
-        period: '2018',
-        role: 'Web Designer Intern @ SLT PVT LTD',
-        detail: 'Created interactive websites, landing pages, and component-led user experiences',
-    },
+        period: '2019 - 2022',
+        role: 'Associate Web Designer @ SLT PVT LTD',
+        detail: 'Created 30+ responsive websites and converted 100+ UI designs into polished web experiences',
+    }
 ];
-
-function MiniBrowser({ theme }: { theme: 'emerald' | 'violet' | 'blue' }) {
-    return (
-        <div className={`case-visual case-visual--${theme}`}>
-            <div className="browser-frame">
-                <div className="browser-bar">
-                    <span />
-                    <span />
-                    <span />
-                </div>
-                <div className="mock-page">
-                    <aside className="mock-sidebar">
-                        <span />
-                        <span />
-                        <span />
-                        <span />
-                    </aside>
-                    <main className="mock-content">
-                        <div className="mock-hero">
-                            <div>
-                                <span className="mock-kicker" />
-                                <span className="mock-title" />
-                            </div>
-                            <span className="mock-button" />
-                        </div>
-                        <div className="mock-grid">
-                            <span />
-                            <span />
-                            <span />
-                        </div>
-                        <div className="mock-list">
-                            <span />
-                            <span />
-                            <span />
-                        </div>
-                    </main>
-                </div>
-            </div>
-        </div>
-    );
-}
 
 export default function Home() {
     return (
