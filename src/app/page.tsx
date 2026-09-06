@@ -41,13 +41,13 @@ const experience = [
         detail: 'Built scalable SaaS platforms, reusable UI architecture, APIs, and AI-powered integrations',
     },
     {
-        period: '2022 - 2024',
+        period: '2021 - 2024',
         role: 'Frontend Developer @ SLT PVT LTD',
         detail: 'Developed enterprise Angular/React applications, reusable components, and API-driven features',
     },
     {
-        period: '2019 - 2022',
-        role: 'Associate Web Designer @ SLT PVT LTD',
+        period: '2018 - 2020',
+        role: 'Associate Web Designer @ SAMAARAMBH Techno Management',
         detail: 'Created 30+ responsive websites and converted 100+ UI designs into polished web experiences',
     }
 ];
