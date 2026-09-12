@@ -47,7 +47,7 @@ const experience = [
     },
     {
         period: '2018 - 2020',
-        role: 'Associate Web Designer @ SAMAARAMBH Techno Management',
+        role: 'Associate Web Designer @ SLT PVT LTD',
         detail: 'Created 30+ responsive websites and converted 100+ UI designs into polished web experiences',
     }
 ];
