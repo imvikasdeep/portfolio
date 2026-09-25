@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'SBA My Business Case Study - Vikasdeep Chaudhary',
+    title: 'Car Dealerships Market Platform Case Study - Vikasdeep Chaudhary',
     description: 'Angular dealership website management platform case study.',
 };
 
@@ -25,7 +25,7 @@ export default function CarDealershipsMarketPlatformPage() {
     return <main className="case-study-page">
         <div className="case-study-header">
             <Link href="/" className="back-home-btn" style={{ marginBottom: '24px' }}>← Back to Portfolio</Link>
-            <h1>SBA My Business</h1>
+            <h1>Car Dealerships Market Platform</h1>
             <p className="case-study-tagline">Dealer website management platform for content, SEO, and marketing performance</p>
         </div>
 
@@ -42,7 +42,7 @@ export default function CarDealershipsMarketPlatformPage() {
             </div>
         </section>
 
-        <Content title="Overview"><p>SBA My Business is a centralized admin platform for automotive dealerships and dealer groups. It gives business users direct control over their website presence: dealership details, content, media, SEO, settings, reviews, and user access—without depending on a technical team for every update.</p><p>The platform also brings website and marketing performance into the same experience, turning Google Analytics, Search Console, PageSpeed, Facebook, and Instagram data into useful daily reporting.</p></Content>
+        <Content title="Overview"><p>Car Dealerships Market Platform is a centralized admin platform for automotive dealerships and dealer groups. It gives business users direct control over their website presence: dealership details, content, media, SEO, settings, reviews, and user access—without depending on a technical team for every update.</p><p>The platform also brings website and marketing performance into the same experience, turning Google Analytics, Search Console, PageSpeed, Facebook, and Instagram data into useful daily reporting.</p></Content>
 
         <section className="study-section"><h2>The Challenge</h2><div className="study-text"><p>Dealership teams needed one approachable workspace to manage content and understand digital performance. The frontend had to make form-heavy CMS workflows, multiple authentication models, and role-specific administration clear and dependable for non-technical users.</p></div><div className="problem-list">{challenges.map(([number, title, text]) => <div className="problem-card" key={number}><div className="problem-label">{number}</div><h3>{title}</h3><p>{text}</p></div>)}</div></section>
 
@@ -62,4 +62,4 @@ export default function CarDealershipsMarketPlatformPage() {
 function Content({ title, children }: { title: string; children: React.ReactNode }) { return <section className="study-section"><h2>{title}</h2><div className="study-text">{children}</div></section>; }
 function Meta({ label, value }: { label: string; value: string }) { return <div><div className="meta-label">{label}</div><div className="meta-val">{value}</div></div>; }
 function Metric({ value, label }: { value: string; label: string }) { return <div><strong>{value}</strong><span>{label}</span></div>; }
-function DashboardPreview() { return <div className="sba-preview" aria-label="Illustrative SBA My Business executive dashboard"><aside><strong>SBA</strong><span className="active" /><span /><span /><span /><span /></aside><div className="sba-preview__body"><div className="sba-preview__top"><div><small>EXECUTIVE DASHBOARD</small><h3>Good morning, Dealer Team</h3></div><button>Last 30 days</button></div><div className="sba-preview__cards"><Metric value="42.8K" label="Website sessions" /><Metric value="18.6K" label="Search impressions" /><Metric value="92" label="Performance score" /></div><div className="sba-preview__chart"><strong>Traffic overview</strong><small>Sessions by day</small><svg viewBox="0 0 460 120" preserveAspectRatio="none"><path d="M0 98 C35 70 55 95 90 65 S145 85 182 44 S230 78 268 52 S320 18 355 42 S415 15 460 27" fill="none" stroke="currentColor" strokeWidth="3" /></svg></div></div></div>; }
+function DashboardPreview() { return <div className="sba-preview" aria-label="Illustrative Car Dealerships Market Platform executive dashboard"><aside><strong>SBA</strong><span className="active" /><span /><span /><span /><span /></aside><div className="sba-preview__body"><div className="sba-preview__top"><div><small>EXECUTIVE DASHBOARD</small><h3>Good morning, Dealer Team</h3></div><button>Last 30 days</button></div><div className="sba-preview__cards"><Metric value="42.8K" label="Website sessions" /><Metric value="18.6K" label="Search impressions" /><Metric value="92" label="Performance score" /></div><div className="sba-preview__chart"><strong>Traffic overview</strong><small>Sessions by day</small><svg viewBox="0 0 460 120" preserveAspectRatio="none"><path d="M0 98 C35 70 55 95 90 65 S145 85 182 44 S230 78 268 52 S320 18 355 42 S415 15 460 27" fill="none" stroke="currentColor" strokeWidth="3" /></svg></div></div></div>; }

@@ -23,11 +23,11 @@ const caseStudies = [
         theme: 'blue',
     },
     {
-        title: 'SBA My Business',
+        title: 'Car Dealerships Market Platform',
         subtitle: 'Dealer website management platform for content, SEO, and marketing performance',
         href: '/work/car-dealerships-market-platform',
         github: '',
-        img: '/assets/media/projects/carweek/carweek-ddp.png',
+        img: '/assets/media/projects/cardealer-ship-maeketplace.png',
         theme: 'violet',
     }
 ];
@@ -105,7 +105,7 @@ export default function Home() {
                                     rel={isInternal ? undefined : 'noreferrer'}
                                     aria-label={`Open ${project.title}`}
                                 >
-                                    <img src={project.img} alt={project.title} className="rounded-lg" />
+                                    <img width="100%" src={project.img} alt={project.title} className="rounded-lg" />
                                 </Link>
                                 <div className="case-meta">
                                     <div>
