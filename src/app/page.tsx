@@ -1,5 +1,6 @@
 import type { CSSProperties } from 'react';
 import HashScroll from './components/HashScroll';
+import Link from 'next/link';
 
 const skillTiles = [
     { title: 'Angular', type: 'Framework', rotate: '-4deg', tone: 'red', img: '/assets/media/skills/icons8-angularjs-200.png' },
@@ -20,6 +21,14 @@ const caseStudies = [
         github: '',
         img: '/assets/media/projects/carweek/carweek_homepage-long.png',
         theme: 'blue',
+    },
+    {
+        title: 'Car Dealerships Market Platform',
+        subtitle: 'Dealer website management platform for content, SEO, and marketing performance',
+        href: '/work/car-dealerships-market-platform',
+        github: '',
+        img: '/assets/media/projects/cardealer-ship-maeketplace.png',
+        theme: 'violet',
     }
 ];
 
@@ -90,14 +99,14 @@ export default function Home() {
                         const isInternal = project.href.startsWith('/');
                         return (
                             <article className="case-study" key={project.title}>
-                                <a
+                                <Link
                                     href={project.href}
                                     target={isInternal ? undefined : '_blank'}
                                     rel={isInternal ? undefined : 'noreferrer'}
                                     aria-label={`Open ${project.title}`}
                                 >
-                                    <img src={project.img} alt={project.title} className="rounded-lg" />
-                                </a>
+                                    <img width="100%" src={project.img} alt={project.title} className="rounded-lg" />
+                                </Link>
                                 <div className="case-meta">
                                     <div>
                                         <h3>{project.title}</h3>
